@@ -15,4 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Homepage');
-});
+})->name('Home');
+
+Route::get('/Fisica', function () {
+    return view('Fisica');
+})->name('Fisica');
+
+Route::get('/ModelosFisicaEnsino', function () {
+    return view('ModelosFisicaEnsino');
+})->name('ModelosFisicaEnsino');
+
+Route::get('/Modelo', function () {
+    return view('Modelo');
+})->name('Modelo');
+
+
